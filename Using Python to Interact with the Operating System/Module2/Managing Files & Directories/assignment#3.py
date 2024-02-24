@@ -10,6 +10,6 @@ def parent_directory():
   relative_parent = os.path.join(os.getcwd(), os.pardir)
 
   # Return the absolute path of the parent directory
-  return relative_parent
+  return os.path.abspath(relative_parent)
 
 print(parent_directory())
